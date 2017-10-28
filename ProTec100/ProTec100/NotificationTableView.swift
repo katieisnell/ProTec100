@@ -24,15 +24,21 @@ class NotificationTableView: UITableView , UITableViewDelegate, UITableViewDataS
     fatalError("init(coder:) has not been implemented")
   }
   
+  // MARK: - TableView Row Height
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return viewWidth / 15
+  }
+  
   // MARK: - TableView Data Source
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 500
+    return 10
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell()
+    let notif = AlertNotification(type: .radio, content: "Radio Call", date: Date(timeIntervalSinceNow: 0), location: MapLocation(x: 0, y: 0), sender: "Sender")
+    let cell = NotificationTableCell(notification: notif)
     return cell
   }
-  
 }

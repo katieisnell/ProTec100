@@ -8,27 +8,28 @@
 
 import UIKit
 
+var viewHeight: CGFloat = 0.0
+var viewWidth: CGFloat = 0.0
+
 class MainViewController: UIViewController {
   
   var notificationsTable = NotificationTableView()
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    let width = view.bounds.size.width
-    let height = view.bounds.size.height
+    viewWidth = view.bounds.size.width
+    viewHeight = view.bounds.size.height
     
     // Add the notifications table view.
-    notificationsTable.frame = CGRect(x: width * 2 / 3, y: 0, width: width / 3, height: height)
+    notificationsTable.frame = CGRect(x: viewWidth * 2 / 3, y: 0, width: viewWidth / 3, height: viewHeight)
     view.addSubview(notificationsTable)
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
-
+  
 }
-
