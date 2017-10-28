@@ -17,7 +17,7 @@ $foundResult = 0;
 if ($resultGetEverythingRicochet->num_rows > 0) {
   $foundResult = 1;
   while($row = $resultGetEverythingRicochet->fetch_assoc()) {
-    $output = $row['Time'];
+    $output = $row;
   }
 }
 else {
