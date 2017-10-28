@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  ProTec100
 //
 //  Created by Jonathan Tang on 28/10/2017.
@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+  
+  var notificationsTable = NotificationTableView()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    let width = view.bounds.size.width
+    let height = view.bounds.size.height
+    
+    // Add the notifications table view.
+    notificationsTable.frame = CGRect(x: width * 2 / 3, y: 0, width: width / 3, height: height)
+    view.addSubview(notificationsTable)
   }
 
   override func didReceiveMemoryWarning() {
