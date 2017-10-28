@@ -25,11 +25,29 @@ class MainViewController: UIViewController {
     // Add the notifications table view.
     notificationsTable.frame = CGRect(x: viewWidth * 2 / 3, y: 0, width: viewWidth / 3, height: viewHeight)
     view.addSubview(notificationsTable)
+    
+    for family: String in UIFont.familyNames
+    {
+      print("\(family)")
+      for names: String in UIFont.fontNames(forFamilyName: family)
+      {
+        print("== \(names)")
+      }
+    }
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  // Prevent the device orientation to be rotated.
+  func shouldAutorotate() -> Bool {
+    return false
+  }
+  
+  func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+    return UIInterfaceOrientationMask.landscape
   }
   
 }
