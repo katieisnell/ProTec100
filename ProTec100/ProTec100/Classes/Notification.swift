@@ -12,20 +12,19 @@ import UIKit
 /// Class for a single notification.
 class AlertNotification {
   var type: AlertType
-//  var icon: UIImage
   var content: String
   var date: Date
-  var time: TimeInterval
+//  var time: TimeInterval
   var location: MapLocation
   var sender: String
   
-  init(type: AlertType, content: String, date: Date, time: TimeInterval,
+  init(type: AlertType, content: String, date: Date,
        location: MapLocation, sender: String) {
     self.type = type
     //    TODO: Switch the 'type' to select icon
     self.content = content
     self.date = date
-    self.time = time
+//    self.time = time
     self.location = location
     self.sender = sender
   }
@@ -36,9 +35,10 @@ class AlertNotification {
 ///
 /// - sms: Recieved from a user on site via SMS
 /// - radio: Recieved from an officer on site via radio
-/// - door: from the Texecom Ricohet API
+/// - doorOpen: Recieved from the Texecom Ricohet API
+/// - doorClose: Recieved from the Texecom Ricohet API
 enum AlertType {
-  case sms, radio, door
+  case sms, radio, doorOpen, doorClose
 }
 
 /// Location on the floor plan.
