@@ -34,13 +34,27 @@ class NotificationTableCell: UITableViewCell {
     contentView.addSubview(iconImage)
     
     // Add the content title to the cell
-    let cellTitle = UILabel(frame: CGRect(x: viewWidth / 15, y: 10, width: 4 * viewWidth / 15 - 10, height: viewWidth / 30))
-    cellTitle.text = cellNotification.content
+    let cellTitle = UILabel(frame: CGRect(x: viewWidth / 15, y: 10, width: 4 * viewWidth / 15 - 10, height: viewWidth / 24 - 15))
+    switch cellNotification.type {
+    case .doorOpen: cellTitle.text = "Door Sensor - Opened"
+    case .doorClose: cellTitle.text = "Door Sensor - Closed"
+    case .sms: cellTitle.text = "SMS Message"
+    case .radio: cellTitle.text = "Radio Call"
+    }
+    cellTitle.font = UIFont(name: "SourceSansPro-Semibold", size: 17.0)
     contentView.addSubview(cellTitle)
     
     // Add the content message to the cell
+    let cellMessage = UILabel(frame: CGRect(x: viewWidth / 15, y: viewWidth / 24 - 10, width: 4 * viewWidth / 15 - 10, height: viewWidth / 24 - 15))
+    cellMessage.text = cellNotification.content
+    cellMessage.font = UIFont(name: "SourceSansPro-Regular", size: 17.0)
+    contentView.addSubview(cellMessage)
     
     // Add the timestamp of the message
+    let cellTime = UILabel(frame: CGRect(x: 4 * viewWidth / 15 + 10, y: viewWidth / 24 - 25, width: viewWidth / 15 - 10, height: viewWidth / 24 - 15))
+    cellTime.text = "13:05"
+    cellTime.font = UIFont(name: "SourceSansPro-Semibold", size: 17.0)
+    contentView.addSubview(cellTime)
   }
   
   required init?(coder aDecoder: NSCoder) {

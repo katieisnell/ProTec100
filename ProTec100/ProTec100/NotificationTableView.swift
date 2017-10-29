@@ -37,7 +37,7 @@ class NotificationTableView: UITableView , UITableViewDelegate, UITableViewDataS
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let notif = AlertNotification(type: .radio, content: "Radio Call", date: Date(timeIntervalSinceNow: 0), location: MapLocation(x: 0, y: 0), sender: "Sender")
+    let notif = AlertNotification(type: .radio, content: "Room 215D", date: Date(timeIntervalSinceNow: 0), location: MapLocation(x: 0, y: 0), sender: "Sender")
     let cell = NotificationTableCell(notification: notif)
     return cell
   }
