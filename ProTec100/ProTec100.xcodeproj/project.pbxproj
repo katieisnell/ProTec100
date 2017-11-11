@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8D849CE11FA4D0B300ABF725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D849CE01FA4D0B300ABF725 /* AppDelegate.swift */; };
-		8D849CE31FA4D0B300ABF725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D849CE21FA4D0B300ABF725 /* ViewController.swift */; };
+		8D849CE31FA4D0B300ABF725 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D849CE21FA4D0B300ABF725 /* MainViewController.swift */; };
 		8D849CE61FA4D0B300ABF725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D849CE41FA4D0B300ABF725 /* Main.storyboard */; };
 		8D849CE81FA4D0B300ABF725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D849CE71FA4D0B300ABF725 /* Assets.xcassets */; };
 		8D849CEB1FA4D0B300ABF725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D849CE91FA4D0B300ABF725 /* LaunchScreen.storyboard */; };
+		8D849CF41FA4D49900ABF725 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D849CF31FA4D49900ABF725 /* Notification.swift */; };
+		8D849CF81FA4EF3800ABF725 /* NotificationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D849CF71FA4EF3800ABF725 /* NotificationTableView.swift */; };
+		8D849CFC1FA5094400ABF725 /* NotificationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D849CFB1FA5094400ABF725 /* NotificationTableCell.swift */; };
+		8D849D001FA53A8600ABF725 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D849CFE1FA53A8600ABF725 /* SourceSansPro-Regular.ttf */; };
+		8D849D011FA53A8600ABF725 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D849CFF1FA53A8600ABF725 /* SourceSansPro-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D849CDD1FA4D0B300ABF725 /* ProTec100.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProTec100.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D849CE01FA4D0B300ABF725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D849CE21FA4D0B300ABF725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D849CE21FA4D0B300ABF725 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8D849CE51FA4D0B300ABF725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D849CE71FA4D0B300ABF725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D849CEA1FA4D0B300ABF725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D849CEC1FA4D0B300ABF725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D849CF31FA4D49900ABF725 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		8D849CF71FA4EF3800ABF725 /* NotificationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableView.swift; sourceTree = "<group>"; };
+		8D849CFB1FA5094400ABF725 /* NotificationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableCell.swift; sourceTree = "<group>"; };
+		8D849CFE1FA53A8600ABF725 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		8D849CFF1FA53A8600ABF725 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,15 +64,36 @@
 		8D849CDF1FA4D0B300ABF725 /* ProTec100 */ = {
 			isa = PBXGroup;
 			children = (
+				8D849CF21FA4D44000ABF725 /* Classes */,
 				8D849CE01FA4D0B300ABF725 /* AppDelegate.swift */,
-				8D849CE21FA4D0B300ABF725 /* ViewController.swift */,
+				8D849CE21FA4D0B300ABF725 /* MainViewController.swift */,
+				8D849CF71FA4EF3800ABF725 /* NotificationTableView.swift */,
+				8D849CFB1FA5094400ABF725 /* NotificationTableCell.swift */,
 				8D849CE41FA4D0B300ABF725 /* Main.storyboard */,
 				8D849CE71FA4D0B300ABF725 /* Assets.xcassets */,
 				8D849CE91FA4D0B300ABF725 /* LaunchScreen.storyboard */,
 				8D849CEC1FA4D0B300ABF725 /* Info.plist */,
+				8D849CFD1FA53A8600ABF725 /* Fonts */,
 			);
 			path = ProTec100;
 			sourceTree = "<group>";
+		};
+		8D849CF21FA4D44000ABF725 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8D849CF31FA4D49900ABF725 /* Notification.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8D849CFD1FA53A8600ABF725 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8D849CFE1FA53A8600ABF725 /* SourceSansPro-Regular.ttf */,
+				8D849CFF1FA53A8600ABF725 /* SourceSansPro-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -126,6 +157,8 @@
 				8D849CEB1FA4D0B300ABF725 /* LaunchScreen.storyboard in Resources */,
 				8D849CE81FA4D0B300ABF725 /* Assets.xcassets in Resources */,
 				8D849CE61FA4D0B300ABF725 /* Main.storyboard in Resources */,
+				8D849D001FA53A8600ABF725 /* SourceSansPro-Regular.ttf in Resources */,
+				8D849D011FA53A8600ABF725 /* SourceSansPro-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D849CE31FA4D0B300ABF725 /* ViewController.swift in Sources */,
+				8D849CF81FA4EF3800ABF725 /* NotificationTableView.swift in Sources */,
+				8D849CE31FA4D0B300ABF725 /* MainViewController.swift in Sources */,
 				8D849CE11FA4D0B300ABF725 /* AppDelegate.swift in Sources */,
+				8D849CFC1FA5094400ABF725 /* NotificationTableCell.swift in Sources */,
+				8D849CF41FA4D49900ABF725 /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
